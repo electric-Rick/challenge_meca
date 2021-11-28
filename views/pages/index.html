@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<title>Login</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="./change_route.js"></script>
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif;}
+body { background-color: tomato;}
+.w3-row-padding img {margin-bottom: 12px;}
+/* Set the width of the sidebar to 120px */
+#login_form{margin-left: 39%;}
+hr{max-width: 34%;}
+    
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {
+    #main {margin-left: 0}
+    input {width: 95%;}
+    #login_form{margin-left: 8%;}
+    hr{max-width: 100%; margin-right: 5%;}    
+}
+</style>
+
+<body class="w3-black">
+
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  
+  <a href="#" class="w3-bar-item w3-button w3-padding-small w3-black">
+  
+    <i class="fa fa-home w3-medium"></i>
+  
+    <p>INÍCIO</p>
+  
+  </a>
+  
+  <a href="./login.html" class="w3-bar-item w3-button w3-padding-small w3-hover-black">
+  
+    <i class="fa fa-user w3-medium"></i>
+  
+    <p>LOGIN</p>
+  
+  </a>  
+  
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-small w3-hover-black">
+  
+    <i class="fa fa-envelope w3-medium"></i>
+  
+    <p>CONTATOS</p>
+  
+  </a>
+
+</nav>
+
+
+<div class="w3-top w3-hide-large w3-hide-medium" id="menu_opt">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">INÍCIO</a>
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">LOGIN</a>
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">CONTATOS</a>
+  </div>
+</div>
+
+<div class="w3-padding-large" id="main">
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+        <h3>Olá Usuário!</h3>
+        <p>Para poder continuar, selecione abaixo o tipo de cliente</p>
+        <form>
+          <select name="" id="options">
+            <option value="macapa" id="macapa_opt">Macapá</option>
+            <option value="varejao" id="varejao_opt">Varejão</option>
+          </select>       
+        </form><br>    
+        <input type="button" value="Confirmar" onclick="change_route()">
+  </header>
+<div id="user_tables">
+    
+</div>
+
+</div>
+<script >
+  
+</script>
+</body>
+</html>
